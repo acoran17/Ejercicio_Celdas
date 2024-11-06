@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zuma</title>
+  <script src="celdas.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h1>Game</h1>
+  <h2>Objetivo</h2>
+  <p>
+    Si eliminas todas las celdas, ganas.
+    Si las celdas llegan al final del recuadro, pierdes.
+  </p>
+  <h2>Reglas</h2>
+  <p>
+    Se crean un numero de celdas de colores aleatorios de inicio.<br>
+    Cada poco tiempo aparecera una nueva celda de un color aleatorio a la derecha.<br>
+    Pulsa una celda y si hay mas de 3 celdas del mismo color juntas, incluida la pulsada, se borraran.<br>
+    Pulsa una celda teniendo pulsado Ctrl y se hara un intercambio con la celda de la derecha.<br>
+  </p>
+  <table>
+    <tr>
+      <td>Respawn: </td>
+      <td id="time"></td>
+    </tr>
+  </table>
+  <div id="box"></div>
+</body>
+</html>
